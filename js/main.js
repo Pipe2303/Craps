@@ -42,7 +42,7 @@ function jugar(){
     console.log("Se reinicio el turno");
     mostrarMensaje("Gano la partida");
   }
-else(suma==12 || suma==2 || suma==3)
+if(suma==12 || suma==2 || suma==3)
   {
     turno = 1;
     console.log("Se reinicio el turno");
