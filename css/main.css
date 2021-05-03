@@ -27,20 +27,28 @@ body{
   cursor:pointer;
 }
 .creditos{
+  font:small-caps 310% cambria;
   margin:0 auto;
-  width: 197px;
+  width: 200px;
+  margin-top: 40px
 }
 .szs{
-  width:150px;
+  font:small-caps 130% cambria;
+  width:550px;
   margin:0 auto; 
   text-align: center;
+   margin-bottom:90px
 }
 
 #titulo{
+  font:small-caps 510% cambria;
   margin: 0 auto;
-  width: 200px;
+  width: 600px;
   margin-bottom: 40px;
-  color:#0081a7;
+  text-align: center;
+  background-color:#262a2b;
+  color:#8dc3e1;
+   margin-top: 65px
 }
 #mensaje_texto{
   position: absolute;
@@ -129,4 +137,17 @@ body{
   width: 101px;
   height: 40px;
   border-radius: 5px;
+
+}
+
+#instrucciones{
+  
+   position: absolute;
+  top: 499px;
+  left: 330px;
+  width: 660px;
+  height: 510px;
+  border-radius: 5px;
+  
+  
 }
