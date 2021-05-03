@@ -140,7 +140,7 @@ body{
 
 }
 
-#instrucciones{
+.instrucciones{ background-image:url(craps/images/Instrucciones.jpg);
   
    position: absolute;
   top: 200px;
