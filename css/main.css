@@ -140,10 +140,10 @@ body{
 
 }
 
-#instrucciones{ 
+.instrucciones{ 
   background-image:url(..images/Instrucciones.jpg);
   
-   position: absolute;
+  position: absolute;
   top: 200px;
   left: 0px;
   width: 390px;
