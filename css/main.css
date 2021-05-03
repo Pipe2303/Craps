@@ -14,14 +14,14 @@ body{
   margin:0 auto;
 }
 #boton_tirar{
-   font:small-caps 210% cambria;
+  font:small-caps 210% cambria;
   display:block;
-   top: 100px;
+  top: 500px;
   width:200px;
-  height:100px;
-  margin:450px auto;
-  background-color:#262a2b;
-  color:##457B9D;
+  height:60px;
+  margin:0px auto;
+  background-color:#457B9D;
+  color:#262a2b;
   border:0;
   border-radius:100px;
   cursor:pointer;
