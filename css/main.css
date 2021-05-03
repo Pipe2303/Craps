@@ -1,11 +1,12 @@
 body{
-    background-color: #262a2b; 
-}
+     background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
+   
+
 .dado{
   background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
   background-position:-803px;
-  width:157px;
-  height:156px;
+  width:257px;
+  height:380px;
 }
 #contenedor_dados{
   display:flex;
@@ -13,14 +14,16 @@ body{
   margin:0 auto;
 }
 #boton_tirar{
+   font:small-caps 210% cambria;
   display:block;
-  width:100px;
-  height:60px;
-  margin:10px auto;
-  background-color:#A62E2E;
-  color:#F2D857;
+   top: 100px;
+  width:200px;
+  height:100px;
+  margin:450px auto;
+  background-color:#262a2b;
+  color:##457B9D;
   border:0;
-  border-radius:10px;
+  border-radius:100px;
   cursor:pointer;
 }
 .creditos{
