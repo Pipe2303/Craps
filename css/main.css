@@ -1,154 +1,154 @@
 body{
-     background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
-   
+   background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
+ 
 
 .dado{
-  background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
-  background-position:-803px;
-  width:257px;
-  height:380px;
+background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
+background-position:-803px;
+width:257px;
+height:380px;
 }
 #contenedor_dados{
-  display:flex;
-  width:315px;
-  margin:0 auto;
+display:flex;
+width:315px;
+margin:0 auto;
 }
 #boton_tirar{
-  font:small-caps 210% cambria;
-  display:block;
-  top: 500px;
-  width:200px;
-  height:60px;
-  margin:0px auto;
-  background-color:#457B9D;
-  color:#262a2b;
-  border:0;
-  border-radius:100px;
-  cursor:pointer;
+font:small-caps 210% cambria;
+display:block;
+top: 500px;
+width:200px;
+height:60px;
+margin:0px auto;
+background-color:#457B9D;
+color:#262a2b;
+border:0;
+border-radius:100px;
+cursor:pointer;
 }
 .creditos{
-  font:small-caps 310% cambria;
-  margin:0 auto;
-  width: 200px;
-  margin-top: 40px
+font:small-caps 310% cambria;
+margin:0 auto;
+width: 200px;
+margin-top: 40px
 }
 .szs{
-  font:small-caps 130% cambria;
-  width:550px;
-  margin:0 auto; 
-  text-align: center;
-   margin-bottom:90px
+font:small-caps 130% cambria;
+width:550px;
+margin:0 auto; 
+text-align: center;
+ margin-bottom:90px
 }
 
 #titulo{
-  font:small-caps 510% cambria;
-  margin: 0 auto;
-  width: 600px;
-  margin-bottom: 40px;
-  text-align: center;
-  background-color:#262a2b;
-  color:#8dc3e1;
-   margin-top: 65px
+font:small-caps 510% cambria;
+margin: 0 auto;
+width: 600px;
+margin-bottom: 40px;
+text-align: center;
+background-color:#262a2b;
+color:#8dc3e1;
+ margin-top: 65px
 }
 #mensaje_texto{
-  position: absolute;
-  top: 30px;
-  left: 40px;
-  width: 255px;
-  height: 140px;
+position: absolute;
+top: 30px;
+left: 40px;
+width: 255px;
+height: 140px;
 }
 
 body{
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 .show{
-  display:block;
+display:block;
 }
 .hidden{
-  display:none;
+display:none;
 }
 .ligthbox{
-  position: fixed;
-  top:0px;
-  left:0px;
-  width: 100%;
-  height: 100%;
-  background:rgba(0,0,0,.6);
+position: fixed;
+top:0px;
+left:0px;
+width: 100%;
+height: 100%;
+background:rgba(0,0,0,.6);
 }
 .login_content{
-  position: relative;
-  background-color: #fed9b7;
-  width: 353px;
-  height: 230px;
-  margin-right: auto;
-  margin-left: auto;
-  top:50%;
-  margin-top: -115px;
-  border-radius: 5%;
+position: relative;
+background-color: #fed9b7;
+width: 353px;
+height: 230px;
+margin-right: auto;
+margin-left: auto;
+top:50%;
+margin-top: -115px;
+border-radius: 5%;
 }
 .close_button{
-  position: absolute;
-  background-color: #f07167;
-  top: 10px;
-  right: 10px;
-  color: white;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 23px;
-  line-height: 34px;
-  font-family: verdana;
+position: absolute;
+background-color: #f07167;
+top: 10px;
+right: 10px;
+color: white;
+width: 40px;
+height: 40px;
+text-align: center;
+border-radius: 20px;
+cursor: pointer;
+font-size: 23px;
+line-height: 34px;
+font-family: verdana;
 }
 .close_button:hover{
-  background-color: white;
-  color: #0081a7;
+background-color: white;
+color: #0081a7;
 }
 #input_name{
-  position: absolute;
-  top: 70px;
-  left: 60px;
-  width: 210px;
-  height: 28px;
-  border-radius: 6px;
+position: absolute;
+top: 70px;
+left: 60px;
+width: 210px;
+height: 28px;
+border-radius: 6px;
 }
 #input_password{
-  position: absolute;
-  top: 113px;
-  left: 60px;
-  width: 210px;
-  height: 28px;
-  border-radius: 6px;
+position: absolute;
+top: 113px;
+left: 60px;
+width: 210px;
+height: 28px;
+border-radius: 6px;
 }
 #button_login{
-  position: absolute;
-  top: 160px;
-  left: 60px;
-  width: 110px;
-  height: 40px;
-  border-radius: 5px;
+position: absolute;
+top: 160px;
+left: 60px;
+width: 110px;
+height: 40px;
+border-radius: 5px;
 }
 #button_cancel{
-  position: absolute;
-  top: 160px;
-  left: 175px;
-  width: 101px;
-  height: 40px;
-  border-radius: 5px;
+position: absolute;
+top: 160px;
+left: 175px;
+width: 101px;
+height: 40px;
+border-radius: 5px;
 
 }
 
 #instrucciones{ 
-  
-  
-  position: absolute;
-  top: 200px;
-  left: 0px;
-  width: 390px;
-  height: 390px;
-  border-radius: 50px;
-  
-  
+
+
+position: absolute;
+top: 200px;
+left: 0px;
+width: 390px;
+height: 390px;
+border-radius: 50px;
+
+
 }
