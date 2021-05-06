@@ -5,7 +5,7 @@ var dado1,dado2,boton_tirar;
 var suma;
 var turno=1;
 var punto=0;
-var audioWin = new Audio("C:/Users/Usuario/Desktop/U. MANUELA/PRIMER SEMESTRE/juego/Craps/sounds/victoria.mp3");
+var audioWin = new Audio("https://github.com/Pipe2303/Craps/blob/master/sounds/perdiste.mp3");
 
 window.onload = init;
 
