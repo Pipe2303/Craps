@@ -33,11 +33,14 @@ transform: translateY(4px);
 }
 .creditos{
 font:small-caps 310% cambria;
-color-font: #F1FAEE;
+color: #262a2b;
 margin:0 auto;
 width: 1200px;
 margin-top: 40px;
 text-align: center;
+background-color:#F1FAEE;
+width: 1201px;
+border-radius: 50px;
 }
 .szs{
 font:small-caps 130% cambria;
