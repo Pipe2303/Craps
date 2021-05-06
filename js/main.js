@@ -5,7 +5,7 @@ var dado1,dado2,boton_tirar;
 var suma;
 var turno=1;
 var punto=0;
-
+var audioWin = new Audio("C:/Users/Usuario/Desktop/U. MANUELA/PRIMER SEMESTRE/juego/Craps/sounds/victoria.mp3");
 
 window.onload = init;
 
@@ -39,6 +39,7 @@ if((suma==7 || suma==11) && turno==1 )
 {
   mostrarMensaje("😎Gano la partida😎");
   console.log("Se reinicio el turno");
+  audioWin.play();
   turno=1;
 }
 else
@@ -62,6 +63,7 @@ else
     {
       mostrarMensaje("😎 Gano la partida 😎");
       console.log("Se reinicio el turno");
+      audioWin.play();
       turno = 1;
       punto = 0;
     }
