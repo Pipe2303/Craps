@@ -36,7 +36,8 @@ transform: translateY(4px);
 font:small-caps 310% cambria;
 margin:0 auto;
 width: 1200px;
-margin-top: 40px
+margin-top: 40px;
+text-align: center;
 }
 .szs{
 font:small-caps 130% cambria;
