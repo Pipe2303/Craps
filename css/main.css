@@ -1,6 +1,6 @@
 body{
-   background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
- 
+background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
+
 
 .dado{
 background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
@@ -29,13 +29,13 @@ cursor:pointer;
 #boton_tirar:hover {background-color::#457B9D}
 
 #boton_tirar:active {
-  background-color: #F1FAEE;
-  transform: translateY(4px);
+background-color: #F1FAEE;
+transform: translateY(4px);
 }
 .creditos{
 font:small-caps 310% cambria;
 margin:0 auto;
-width: 200px;
+width: 1200px;
 margin-top: 40px
 }
 .szs{
@@ -43,7 +43,7 @@ font:small-caps 130% cambria;
 width:550px;
 margin:0 auto; 
 text-align: center;
- margin-bottom:90px
+margin-bottom:90px
 }
 
 #titulo{
@@ -54,7 +54,7 @@ margin-bottom: 40px;
 text-align: center;
 background-color:#262a2b;
 color:#8dc3e1;
- margin-top: 65px
+margin-top: 65px
 }
 #mensaje_texto{
 position: absolute;
