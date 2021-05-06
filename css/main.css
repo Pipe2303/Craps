@@ -1,7 +1,6 @@
 body{
 background-image:url(https://media1.tenor.com/images/a8937d9bc6ddda79dc00e86f10cca1b8/tenor.gif?itemid=12992912); }
 
-
 .dado{
 background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
 background-position:-803px;
@@ -34,6 +33,7 @@ transform: translateY(4px);
 }
 .creditos{
 font:small-caps 310% cambria;
+color-font: #F1FAEE;
 margin:0 auto;
 width: 1200px;
 margin-top: 40px;

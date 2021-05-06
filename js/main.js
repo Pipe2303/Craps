@@ -5,7 +5,10 @@ var dado1,dado2,boton_tirar;
 var suma;
 var turno=1;
 var punto=0;
-var audioWin = new Audio("../sounds/perdiste.mp3");
+var audioWin = new Audio("https://youtu.be/s857dwxbKPY");
+var audioLost = new Audio("../sounds/perdiste.mp3");
+var audioCoin = new Audio("https://github.com/Pipe2303/Craps/blob/master/sounds/punto.mp3");
+
 
 window.onload = init;
 
@@ -48,6 +51,7 @@ else
   {
     mostrarMensaje("🤕 Perdio la partida 🤕");
     console.log("Se reinicio el turno");
+    audioLost.play();
     turno=1; 
   }
   else
@@ -57,6 +61,7 @@ else
       punto = suma;
       mostrarMensaje("El Punto es " + punto);
       console.log("Punto es ", punto);
+      audioCoin.play();
     }
 
     if(suma == punto && turno>=2)
@@ -73,6 +78,7 @@ else
       {
         mostrarMensaje("🤕 Perdio la partida 🤕");
         console.log("Se reinicio el turno");
+        audioLost.play();
         turno = 1;
         punto = 0;
       }
