@@ -5,9 +5,10 @@ var dado1,dado2,boton_tirar;
 var suma;
 var turno=1;
 var punto=0;
-var audioWin = new Audio("https://youtu.be/s857dwxbKPY");
-var audioLost = new Audio("../sounds/perdiste.mp3");
-var audioCoin = new Audio("https://github.com/Pipe2303/Craps/blob/master/sounds/punto.mp3");
+var ganar= "./sounds/ganaste.mp3";
+var perder= "./sonidos/perdiste.mp3";
+var coin= "./sonidos/punto.mp3";
+var sonido= "./sounds/sonido.mp3"
 
 
 window.onload = init;
@@ -19,6 +20,11 @@ boton_tirar.addEventListener("click",jugar);
 dado1 = document.getElementById("dado1");
 dado2 = document.getElementById("dado2");
 cerrar.addEventListener("click",cerrarVentana);
+
+sonido= new Howl({src: ["./sounds/sonido.mp3"]});
+ganar= new Howl({src: ["./sounds/ganaste.mp3"]});
+perder= new Howl({src: ["./sounds/perdiste.mp3"]});
+coin= new Howl({src: ["./sounds/punto.mp3"]});
 }
 
 function tirardado(){
@@ -37,12 +43,13 @@ actualizarDado(dado2,tiro_2);
 
 
 suma = tiro_1 + tiro_2;
+sonido.play();
 
 if((suma==7 || suma==11) && turno==1 )
 {
   mostrarMensaje("😎Gano la partida😎");
+   ganar.play();
   console.log("Se reinicio el turno");
-  audioWin.play();
   turno=1;
 }
 else
@@ -50,8 +57,8 @@ else
   if((suma==2 || suma==3 || suma==12) && turno==1)
   {
     mostrarMensaje("🤕 Perdio la partida 🤕");
+     perder.play();
     console.log("Se reinicio el turno");
-    audioLost.play();
     turno=1; 
   }
   else
@@ -60,15 +67,16 @@ else
     {
       punto = suma;
       mostrarMensaje("El Punto es " + punto);
+      coin.play();
       console.log("Punto es ", punto);
-      audioCoin.play();
+    
     }
 
     if(suma == punto && turno>=2)
     {
       mostrarMensaje("😎 Gano la partida 😎");
+       ganar.play();
       console.log("Se reinicio el turno");
-      audioWin.play();
       turno = 1;
       punto = 0;
     }
@@ -77,8 +85,8 @@ else
       if(suma == 7)
       {
         mostrarMensaje("🤕 Perdio la partida 🤕");
+        perder.play();
         console.log("Se reinicio el turno");
-        audioLost.play();
         turno = 1;
         punto = 0;
       }

@@ -42,7 +42,7 @@ background-color:#F1FAEE;
 width: 1201px;
 border-radius: 50px;
 }
-.szs{
+.access{
 font:small-caps 130% cambria;
 width:550px;
 margin:0 auto; 
@@ -124,6 +124,7 @@ width: 210px;
 height: 28px;
 border-radius: 6px;
 }
+
 #input_password{
 position: absolute;
 top: 113px;
@@ -150,15 +151,14 @@ border-radius: 5px;
 
 }
 
+
+
 #instrucciones{ 
-
-
 position: absolute;
 top: 200px;
 left: 0px;
 width: 390px;
 height: 390px;
 border-radius: 0px;
-
-
 }
+
