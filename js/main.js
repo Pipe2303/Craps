@@ -8,7 +8,7 @@ var punto=0;
 var ganar= "./sounds/ganaste.mp3";
 var perder= "./sonidos/perdiste.mp3";
 var coin= "./sonidos/punto.mp3";
-var sonido= "./sounds/sonido.mp3"
+var sonido= "./sounds/boton.mp3"
 
 
 window.onload = init;
@@ -21,7 +21,7 @@ dado1 = document.getElementById("dado1");
 dado2 = document.getElementById("dado2");
 cerrar.addEventListener("click",cerrarVentana);
 
-sonido= new Howl({src: ["./sounds/sonido.mp3"]});
+sonido= new Howl({src: ["./sounds/boton.mp3"]});
 ganar= new Howl({src: ["./sounds/ganaste.mp3"]});
 perder= new Howl({src: ["./sounds/perdiste.mp3"]});
 coin= new Howl({src: ["./sounds/punto.mp3"]});
@@ -47,55 +47,55 @@ sonido.play();
 
 if((suma==7 || suma==11) && turno==1 )
 {
-  mostrarMensaje("😎Gano la partida😎");
-   ganar.play();
-  console.log("Se reinicio el turno");
-  turno=1;
+mostrarMensaje(":😎 Gano la partida 😎:");
+ ganar.play();
+console.log("Se reinicio el turno");
+turno=1;
 }
 else
 {
-  if((suma==2 || suma==3 || suma==12) && turno==1)
+if((suma==2 || suma==3 || suma==12) && turno==1)
+{
+  mostrarMensaje(":🤕 Perdio la partida 🤕:");
+   perder.play();
+  console.log("Se reinicio el turno");
+  turno=1; 
+}
+else
+{
+  if(turno==1)
   {
-    mostrarMensaje("🤕 Perdio la partida 🤕");
-     perder.play();
+    punto = suma;
+    mostrarMensaje("Tu Punto es " + punto);
+    coin.play();
+    console.log("Punto es ", punto);
+  
+  }
+
+  if(suma == punto && turno>=2)
+  {
+    mostrarMensaje(":😎 Gano la partida 😎:");
+     ganar.play();
     console.log("Se reinicio el turno");
-    turno=1; 
+    turno = 1;
+    punto = 0;
   }
   else
   {
-    if(turno==1)
+    if(suma == 7)
     {
-      punto = suma;
-      mostrarMensaje("El Punto es " + punto);
-      coin.play();
-      console.log("Punto es ", punto);
-    
-    }
-
-    if(suma == punto && turno>=2)
-    {
-      mostrarMensaje("😎 Gano la partida 😎");
-       ganar.play();
+      mostrarMensaje(":🤕 Perdio la partida 🤕:");
+      perder.play();
       console.log("Se reinicio el turno");
       turno = 1;
       punto = 0;
     }
     else
     {
-      if(suma == 7)
-      {
-        mostrarMensaje("🤕 Perdio la partida 🤕");
-        perder.play();
-        console.log("Se reinicio el turno");
-        turno = 1;
-        punto = 0;
-      }
-      else
-      {
-        turno = turno + 1;
-      }
+      turno = turno + 1;
     }
   }
+}
 }
 }
 
